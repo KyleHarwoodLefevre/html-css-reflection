@@ -551,49 +551,158 @@ header li .btn-menu:hover {
   }
 }
  //////////////////////////////* BANNER IMAGE */////////////////////////////////////
-
-.hero {
-      /* SIZING */
-  width: 100vw;
-  height: 85vh;
-      
-      /* FLEXBOX */
-  display: flex;
-  justify-content: none;
-  align-items: center;
-      
-      /* TEXT STYLING */
-  text-align: left;
-  
-      /* BACKGROUND STYLING */
-  
-  background: linear-gradient(to left, rgba(255,0,0,0), black),  url(../img/web-design-banner.jpg);      // Selects the Image // 
-  background-size: cover;      // Makes the background large enough to cover the entire image //
-  background-position: center center;      // Centers the Image to the center of the screen //
-  background-repeat: no-repeat;      // Stops the Image from repeating //       
+.slider{
+	width: 100%;
+	height: 919px;
+	overflow: hidden;
+	position: relative;
 }
 
-                              /* BANNER IMAGE HEADING */
-.hero h1 {
-      /* TEXT STYLING */
-  font-size: 3.1em;
-  color: white;
-      
-      /* MARGINS */
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  margin-left: 200px;
+.slide{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	position: absolute;
+  .slidecontent {
+    margin-left: 100px;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    h1 {
+    font-size: 3em;
+    width: 550px;
+    }
+    h2 {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    width: 450px;
+    }
+  }
 }
-                              /* BANNER IMAGE TEXT */
-.hero h2 {
-      /* TEXT STYLING */
-  font-size: 1.3em;
-  color: white;
-      /* MARGINS */
-  margin-left: 200px;
+
+.wdSlide {
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.10), black), url("../img/wdWebBanner.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .slidecontent {
+    color: white;
+    .wdBtn {
+      border: 3px solid #926fb1; 
+      background-color: #926fb1;
+      width: 220px;
+    }
+    .wdBtn:hover {
+      background-color: #7e57a0;
+      border: 3px solid #7e57a0;
+    }
+  }
+}
+.itSlide {
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.10), black), url("../img/itWebBanner.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .slidecontent {
+    color: white;
+    .itBtn {
+      border: 3px solid #4183d7; 
+      background-color: #4183d7;
+      width: 220px;
+    }
+    .itBtn:hover {
+      background-color: #286abd;
+      border: 3px solid #286abd;
+    }
+  }
+}
+.tsSlide {
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.10), black), url("../img/tsWebBanner.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .slidecontent {
+    color: white;
+    .tsBtn {
+      border: 3px solid #d64541; 
+      background-color: #d64541;
+      width: 220px;
+    }
+    .tsBtn:hover {
+      background-color: #bc2c28;
+      border: 3px solid #bc2c28;
+    }
+  }
+}
+.bsSlide {
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.10), black), url("../img/bsWebBanner.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .slidecontent {
+    color: white;
+    .bsBtn {
+      border: 3px solid #67809f; 
+      background-color: #67809f;
+      width: 220px;
+    }
+    .bsBtn:hover {
+      background-color: #526781;
+      border: 3px solid #526781;
+    }
+  }
+}
+.dmSlide {
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.10), black), url("../img/dmWebBanner.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .slidecontent {
+    color: white;
+    .dmBtn {
+      border: 3px solid #2ecc71; 
+      background-color: #2ecc71;
+      width: 320px;
+    }
+    .dmBtn:hover {
+      background-color: #25a25a;
+      border: 3px solid #25a25a;
+    }
+  }
+}
+.csSlide {
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.10), black), url("../img/csWebBanner.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .slidecontent {
+    color: white;
+    .csBtn {
+      border: 3px solid #f62459; 
+      background-color: #f62459;
+      width: 220px;
+    }
+    .csBtn:hover {
+      background-color: #de093f;
+      border: 3px solid #de093f;
+    }
+  }
 }
                               /* BANNER IMAGE BUTTON */
-.hero .btn {
+.btn {
       /* POSITIONING AND SIZING */
   display: block;
   width: 220px;
@@ -601,7 +710,6 @@ header li .btn-menu:hover {
       /* PADDING AND MARGINS */
   padding: 0.8em;
   margin-top: 50px;
-  margin-left: 200px;
   margin-right: auto;
   
       /* TEXT STYLING */
@@ -610,16 +718,40 @@ header li .btn-menu:hover {
   font-size: 1.2em;
   
       /* BORDER STYLING */
-  border: 3px solid #926fb1; 
   border-radius: 5px;
-  
-  background-color: #926fb1;
 }
-.hero .btn:hover {
-  background-color: #7e57a0;
-  border: 3px solid #7e57a0;
+ul {
+  text-align: center;
+  .indicator {
+    display: inline-block;
+    position: relative;
+    height: 11px;
+    width: 11px;
+    background: white;
+    opacity: 0.6;
+    margin: 0px 10px;
+    padding: 0;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    overflow: hidden;
+    cursor: pointer;
+    top: -65px;
+    justify-content: center;
+  }
 }
-
+.indicator:target {
+	background: red;
+  opacity: 1.0;
+}
+.indicator:hover {
+	background: #000000;
+  opacity: 0.1;
+}
+.indicator:active {
+	background: white;
+  opacity: 1.0;
+}
 ///////////////////////////////* CARDS */////////////////////////////////////////////
 
 
@@ -1301,22 +1433,7 @@ hr {
   }
   header li .btn-phone {
     display: none;
-  }
-  .hero {
-    justify-content: center;
-  }
-  .hero h1 {
-    margin-left: 0;
-    text-align: center;
-  }
-  .hero h2 {
-    margin-left: 0;
-    text-align: center;
-  }
-  .hero .btn {
-    margin-left: 100px;
-  }
-  
+  } 
   .small-search-bar {
     display: none;
   }
@@ -1349,21 +1466,6 @@ hr {
   header {
     margin-left: 10px;
     margin-right: 10px;
-  }
-  .hero {
-    justify-content: center;
-    text-align: center;
-  }
-  .hero h1 {
-    margin-left: 0;
-    text-align: center;
-  }
-  .hero h2 {
-    margin-left: 0;
-    text-align: center;
-  }
-  .hero .btn {
-    margin-left: 100px;
   }
   header li {
     margin-left: 0px;
@@ -1402,6 +1504,20 @@ hr {
     width: 100%;
     margin-bottom: 20px;
     margin-left: 5px;
+  }
+  .slide .slidecontent {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .slidecontent h1,
+  .slidecontent h2,
+  .slidecontent .btn {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .slidecontent h1 {
+   margin-right: 50px;
   }
 }
 
